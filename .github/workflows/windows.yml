@@ -8,5 +8,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: shogo82148/actions-setup-perl@v1
         with: { perl-version: latest }
+      - run: perl -V:d_setlocale
       - run: perl -MPOSIX -E "say POSIX::setlocale(POSIX::LC_ALL)"
         env: { LC_ALL: en-US.UTF-8 }
