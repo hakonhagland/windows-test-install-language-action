@@ -9,4 +9,4 @@ jobs:
       - uses: shogo82148/actions-setup-perl@v1
         with: { perl-version: latest }
       - run: perl -MPOSIX -E "say POSIX::setlocale(POSIX::LC_ALL)"
-        env: { LC_ALL: English_United States.1252 }
+        env: { LC_ALL: French_France.1252 }
